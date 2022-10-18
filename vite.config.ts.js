@@ -1,0 +1,10 @@
+// vite.config.ts
+import { defineConfig } from "vite";
+import checker from "vite-plugin-checker";
+var vite_config_default = defineConfig({
+  plugins: [checker({ typescript: true })]
+});
+export {
+  vite_config_default as default
+};
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcudHMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImltcG9ydCB7IGRlZmluZUNvbmZpZyB9IGZyb20gJ3ZpdGUnXG5pbXBvcnQgY2hlY2tlciBmcm9tICd2aXRlLXBsdWdpbi1jaGVja2VyJ1xuLy8gaHR0cHM6Ly92aXRlanMuZGV2L2NvbmZpZy9cbmV4cG9ydCBkZWZhdWx0IGRlZmluZUNvbmZpZyh7XG4gIHBsdWdpbnM6IFtjaGVja2VyKHsgdHlwZXNjcmlwdDogdHJ1ZSB9KV0sXG59KVxuIl0sCiAgIm1hcHBpbmdzIjogIjtBQUFBO0FBQ0E7QUFFQSxJQUFPLHNCQUFRLGFBQWE7QUFBQSxFQUMxQixTQUFTLENBQUMsUUFBUSxFQUFFLFlBQVksS0FBSyxDQUFDLENBQUM7QUFDekMsQ0FBQzsiLAogICJuYW1lcyI6IFtdCn0K

@@ -1,0 +1,64 @@
+:root {
+  --header-bckgd-color: #474d64;
+  --header-text-color: #d3df99;
+  --player1-bckgd-color: #474d64;
+  --player1-text-color: #8df099;
+  --player2-bckgd-color: #a371c7;
+  --player2-text-color: #474d64;
+  --bckgd-color-main: #9d8ba3;
+  --select-button-color: yellow;
+  font-family: 'Inter', sans-serif;
+  /* color: ; */
+}
+
+body {
+  background-color: var(--bckgd-color-main);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+header h1 {
+  color: var(--header-text-color);
+  font-size: 4rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+  background-color: var(--header-bckgd-color);
+}
+container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-size: 2rem;
+  color: #474d64;
+}
+
+section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem;
+}
+
+button {
+  font-weight: 700;
+  background-color: #474d64;
+  align-self: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 999px;
+  border: 2px solid var(--border-color);
+  padding: 0.3rem 1rem;
+}
+
+button.active {
+  background-color: var(--select-button-color);
+}
+
+.game-buttons {
+  display: none;
+}
