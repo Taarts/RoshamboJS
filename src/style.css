@@ -26,8 +26,10 @@ header h1 {
   background-color: var(--header-bckgd-color);
 }
 container {
+  border: 2px solid green;
   display: flex;
-  flex-direction: column;
+  /* flex-flow: row wrap; */
+  justify-content: space-around;
   align-items: center;
 }
 h1 {
@@ -36,23 +38,24 @@ h1 {
 }
 
 section {
+  border: 2px solid red;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-
-  padding: 1rem;
+  padding: 0 5rem;
 }
 
 button {
   font-weight: 700;
   background-color: #474d64;
-  align-self: center;
+  align-self: flex-end;
   justify-content: center;
   cursor: pointer;
   border-radius: 999px;
   border: 2px solid var(--border-color);
   padding: 0.3rem 1rem;
+  margin: 1rem;
 }
 
 button.active {
@@ -61,4 +64,8 @@ button.active {
 
 .game-buttons {
   display: none;
+}
+
+.lower {
+  align-self: flex-end;
 }
