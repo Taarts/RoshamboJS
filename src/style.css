@@ -10,6 +10,9 @@
   font-family: 'Inter', sans-serif;
   /* color: ; */
 }
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: var(--bckgd-color-main);
