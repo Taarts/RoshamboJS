@@ -68,21 +68,21 @@ function setupRoshambo(id: 'player1' | 'player2') {
     state[id] = 'rock'
     rockBtn.style.color = '#d3df99'
     console.log(state)
-    checkGame()
+    setTimeout(checkGame, 0)
   }
 
   function handleSelectPaper(_event: MouseEvent) {
     state[id] = 'paper'
     paperBtn.style.color = '#d3df99'
     console.log(state)
-    checkGame()
+    setTimeout(checkGame, 0)
   }
 
   function handleSelectScissors(_event: MouseEvent) {
     state[id] = 'scissors'
     scissorsBtn.style.color = '#d3df99'
     console.log(state)
-    checkGame()
+    setTimeout(checkGame, 0)
   }
   function handleStart(_event: MouseEvent) {
     state.player1 = ''
