@@ -66,30 +66,31 @@ function setupRoshambo(id: 'player1' | 'player2') {
 
   function handleSelectRock(_event: MouseEvent) {
     state[id] = 'rock'
-    rockBtn.style.backgroundColor = '#d3df99'
+    rockBtn.style.color = '#d3df99'
     console.log(state)
     checkGame()
   }
 
   function handleSelectPaper(_event: MouseEvent) {
     state[id] = 'paper'
-    paperBtn.style.backgroundColor = '#d3df99'
+    paperBtn.style.color = '#d3df99'
     console.log(state)
     checkGame()
   }
 
   function handleSelectScissors(_event: MouseEvent) {
     state[id] = 'scissors'
-    scissorsBtn.style.backgroundColor = '#d3df99'
+    scissorsBtn.style.color = '#d3df99'
     console.log(state)
     checkGame()
   }
   function handleStart(_event: MouseEvent) {
     state.player1 = ''
     state.player2 = ''
-    rockBtn.style.backgroundColor = '#474d64'
-    paperBtn.style.backgroundColor = '#474d64'
-    scissorsBtn.style.backgroundColor = '#474d64'
+    rockBtn.style.color = '#474d64'
+    paperBtn.style.color = '#474d64'
+    scissorsBtn.style.color = '#474d64'
+    restartBtn.style.color = '#d3df99'
   }
 
   rockBtn?.addEventListener('click', handleSelectRock)

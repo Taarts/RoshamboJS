@@ -22,26 +22,43 @@ body {
 }
 header h1 {
   color: var(--header-text-color);
-  font-size: 4rem;
+  font-size: 3.4rem;
   text-align: center;
   padding: 1rem;
   margin: 0;
   background-color: var(--header-bckgd-color);
 }
-container {
-  border: 2px solid green;
+.container {
+  /* border: 2px solid green; */
   display: flex;
-  /* flex-flow: row wrap; */
+  /* flex-flow: column wrap; */
+  /* justify-content: center; */
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
 }
-h1 {
-  font-size: 2rem;
+
+.container h1 {
+  font-size: 1.7rem;
   color: #474d64;
+  font-style: oblique;
+}
+
+fieldset {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+}
+
+fieldset i {
+  font-size: 3rem;
+  color: #474d64;
+  margin: 0 2.5rem;
 }
 
 section {
-  border: 2px solid red;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -52,6 +69,7 @@ section {
 button {
   font-weight: 700;
   background-color: #474d64;
+  color: #d3df99;
   align-self: flex-end;
   justify-content: center;
   cursor: pointer;
@@ -60,6 +78,14 @@ button {
   padding: 0.3rem 1rem;
   margin: 1rem;
 }
+
+/* button #restart {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+} */
 
 button.active {
   background-color: var(--select-button-color);
