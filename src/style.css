@@ -2,8 +2,8 @@
   --header-bckgd-color: #474d64;
   --header-text-color: #d3df99;
   --player1-bckgd-color: #474d64;
-  --player1-text-color: #8df099;
-  --player2-bckgd-color: #a371c7;
+  --header-color: #8df099;
+  --button-hover-clr: #a371c7;
   --player2-text-color: #474d64;
   --bckgd-color-main: #9d8ba3;
   --select-button-color: yellow;
@@ -41,7 +41,7 @@ header h1 {
 
 .container h1 {
   display: block;
-  background-color: #aaeeb2;
+  background-color: var(--header-color);
   border-radius: 0.2rem;
   padding: 0 8rem;
   font-size: 1.7rem;
@@ -64,6 +64,9 @@ fieldset i {
   color: #474d64;
   margin: 0 1.2rem;
 }
+fieldset i:hover {
+  color: var(--header-text-color);
+}
 
 section {
   display: flex;
@@ -85,8 +88,9 @@ button {
   padding: 0.3rem 1rem;
   margin: 1rem;
 }
-button.hover {
-  background-color: var(--select-button-color);
+button:hover {
+  background-color: var(--button-hover-clr);
+  box-shadow: 1px 5px 5px 2px rgba(75, 81, 82, 0.2);
 }
 
 button.active {
