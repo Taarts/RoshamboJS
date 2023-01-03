@@ -20,42 +20,49 @@ body {
   padding: 0;
   text-align: center;
 }
+
 header h1 {
   color: var(--header-text-color);
   font-size: 3.4rem;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
   margin: 0;
   background-color: var(--header-bckgd-color);
 }
 .container {
-  /* border: 2px solid green; */
   display: flex;
   /* flex-flow: column wrap; */
-  /* justify-content: center; */
+  justify-content: center;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
+  padding: 0.51rem;
 }
 
 .container h1 {
+  display: block;
+  background-color: #aaeeb2;
+  border-radius: 0.2rem;
+  padding: 0 8rem;
   font-size: 1.7rem;
   color: #474d64;
   font-style: oblique;
+  /* text-decoration: underline; */
+  margin: 0.5rem;
+  box-shadow: 1px 5px 5px 2px rgba(75, 81, 82, 0.2);
 }
 
 fieldset {
   display: flex;
   justify-content: space-evenly;
-  padding-left: 0;
-  padding-right: 0;
+  margin: 1rem;
   border: none;
 }
 
 fieldset i {
   font-size: 3rem;
   color: #474d64;
-  margin: 0 2.5rem;
+  margin: 0 1.2rem;
 }
 
 section {
@@ -78,14 +85,9 @@ button {
   padding: 0.3rem 1rem;
   margin: 1rem;
 }
-
-/* button #restart {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  margin-inline: auto;
-} */
+button.hover {
+  background-color: var(--select-button-color);
+}
 
 button.active {
   background-color: var(--select-button-color);
